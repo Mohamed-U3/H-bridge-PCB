@@ -7,7 +7,7 @@
 	(title_block
 		(title "H-Bridge Circuit")
 		(date "2025-03-05")
-		(rev "v0.2")
+		(rev "v2.1")
 		(company "AIO")
 		(comment 1 "the Direction of DC motor (CW/CCW).")
 		(comment 2 "Circuit Borad aim to make a driver or controller of the direction of current to change")
@@ -174,7 +174,7 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x04_Pin"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -188,8 +188,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Pin"
-				(at 0 -7.62 0)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -214,7 +214,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -249,19 +249,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_01x03_Pin_1_1"
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 0.8636 -2.54)
@@ -296,17 +284,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(rectangle
@@ -389,24 +366,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4759,7 +4718,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 40.64) (xy 127 40.64)
+			(xy 123.19 36.83) (xy 127 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4899,7 +4858,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 38.1) (xy 123.19 38.1)
+			(xy 127 39.37) (xy 123.19 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5349,7 +5308,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 33.02) (xy 125.73 33.02)
+			(xy 123.19 34.29) (xy 125.73 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5516,16 +5475,6 @@
 			(type default)
 		)
 		(uuid "86a8d914-ccd9-4b2b-adcc-f30b3ef26e39")
-	)
-	(wire
-		(pts
-			(xy 127 35.56) (xy 123.19 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86bc71ea-c921-47be-b6a1-f8bc0317b66c")
 	)
 	(wire
 		(pts
@@ -6420,8 +6369,20 @@
 		(uuid 32a8588a-b745-446a-a889-f7fd29de4893)
 	)
 	(rectangle
+		(start 167.005 43.815)
+		(end 284.48 165.735)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 450a04d3-5a58-4387-9d6d-e1768ccc1656)
+	)
+	(rectangle
 		(start 135.255 12.065)
-		(end 285.115 43.815)
+		(end 284.48 43.815)
 		(stroke
 			(width 0.508)
 			(type default)
@@ -6498,6 +6459,28 @@
 			)
 		)
 		(uuid "0d60bf8f-1dba-4720-a480-ecccac8485f8")
+	)
+	(text_box "atmega328p"
+		(exclude_from_sim no)
+		(at 167.005 43.815 0)
+		(size 21.59 5.08)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 211 37 112 1)
+		)
+		(fill
+			(type color)
+			(color 255 234 139 1)
+		)
+		(effects
+			(font
+				(face "Calibri")
+				(size 1.778 1.778)
+				(bold yes)
+			)
+		)
+		(uuid "4027b7e0-830e-4677-b158-c0da7ff1c618")
 	)
 	(text_box "H-Bridge Circuit"
 		(exclude_from_sim no)
@@ -6675,28 +6658,6 @@
 			)
 		)
 	)
-	(global_label "3"
-		(shape input)
-		(at 127 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1efb8abf-7c23-4710-ae18-c2f3d318ce81")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.1947 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "HIN"
 		(shape input)
 		(at 203.2 114.3 180)
@@ -6743,7 +6704,7 @@
 	)
 	(global_label "2"
 		(shape input)
-		(at 127 38.1 0)
+		(at 127 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6753,7 +6714,7 @@
 		)
 		(uuid "29307d22-2930-4485-9d9f-bd6658191254")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.1947 38.1 0)
+			(at 131.1947 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7249,7 +7210,7 @@
 	)
 	(global_label "A2"
 		(shape input)
-		(at 127 40.64 0)
+		(at 127 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7259,7 +7220,7 @@
 		)
 		(uuid "be0c3a2d-f68c-45c3-a37b-99ccfdaad21f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 132.2833 40.64 0)
+			(at 132.2833 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8758,6 +8719,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 118.11 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b141d78-4af2-4add-81e4-d4c971ceb904")
+		(property "Reference" "J5"
+			(at 115.316 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Control"
+			(at 114.3 37.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 118.11 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 118.11 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ff419038-0547-4b33-b798-fdd4bcfceb31")
+		)
+		(pin "1"
+			(uuid "c17f4cb7-2f8c-485d-a95f-859caaf23374")
+		)
+		(pin "3"
+			(uuid "a282f3e5-aa1c-4941-8aa6-a1df3618f86f")
+		)
+		(instances
+			(project ""
+				(path "/200e90f3-ec66-45f1-987d-342e94018523"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 215.9 156.21 90)
 		(unit 1)
@@ -9243,7 +9274,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 33.02 180)
+		(at 125.73 34.29 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9251,7 +9282,7 @@
 		(dnp no)
 		(uuid "498c0556-242a-4e58-8717-ade8378c86da")
 		(property "Reference" "#PWR014"
-			(at 125.73 26.67 0)
+			(at 125.73 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9260,7 +9291,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.714 29.21 0)
+			(at 124.714 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9268,7 +9299,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 33.02 0)
+			(at 125.73 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9277,7 +9308,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 33.02 0)
+			(at 125.73 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9286,7 +9317,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 33.02 0)
+			(at 125.73 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9510,7 +9541,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink")
-		(at 179.07 81.28 0)
+		(at 132.08 52.07 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -9519,7 +9550,7 @@
 		(fields_autoplaced yes)
 		(uuid "5287b46e-450c-4f6c-ae78-cf94e940262d")
 		(property "Reference" "HS1"
-			(at 182.88 78.1049 0)
+			(at 135.89 48.8949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9528,7 +9559,7 @@
 			)
 		)
 		(property "Value" "Heatsink"
-			(at 182.88 80.6449 0)
+			(at 135.89 51.4349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9537,7 +9568,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:Heatsink_125x35x50mm_3xFixationM3"
-			(at 179.3748 81.28 0)
+			(at 132.3848 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9546,7 +9577,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.3748 81.28 0)
+			(at 132.3848 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9555,7 +9586,7 @@
 			)
 		)
 		(property "Description" "Heatsink"
-			(at 179.07 81.28 0)
+			(at 132.08 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10311,79 +10342,6 @@
 			(project ""
 				(path "/200e90f3-ec66-45f1-987d-342e94018523"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 118.11 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73ce41af-989e-48dd-b63b-04453ff40cdd")
-		(property "Reference" "J5"
-			(at 113.538 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Control"
-			(at 113.538 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 118.11 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 118.11 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 118.11 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e4ba61d3-06dd-4482-b2e9-edfa0fff3838")
-		)
-		(pin "3"
-			(uuid "efc5539f-c349-4418-8578-151fa52e7813")
-		)
-		(pin "4"
-			(uuid "bbe3f6a5-f41f-4b09-8146-b88611c92543")
-		)
-		(pin "2"
-			(uuid "1882b497-0379-4ada-8773-95e231dea489")
-		)
-		(instances
-			(project ""
-				(path "/200e90f3-ec66-45f1-987d-342e94018523"
-					(reference "J5")
 					(unit 1)
 				)
 			)
