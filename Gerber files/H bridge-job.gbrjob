@@ -3,18 +3,18 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.7"
+      "Version": "9.0.1"
     },
-    "CreationDate": "2025-03-05T10:46:07+02:00"
+    "CreationDate": "2025-05-06T15:55:57+03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "H bridge",
       "GUID": "48206272-6964-4676-952e-6b696361645f",
-      "Revision": "rev?"
+      "Revision": "2.1v"
     },
     "Size": {
-      "X": 56.05,
+      "X": 97.05,
       "Y": 50.05
     },
     "LayerNumber": 2,
@@ -27,7 +27,7 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 1.0,
+      "MinLineWidth": 0.5,
       "TrackToRegion": 0.5,
       "RegionToRegion": 0.5
     }

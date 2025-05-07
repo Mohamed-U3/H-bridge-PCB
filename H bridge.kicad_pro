@@ -246,16 +246,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_not_driven|2146300|711200|0d7f6ed9-949b-4347-bc9b-2fdb60b0023d|00000000-0000-0000-0000-000000000000|/200e90f3-ec66-45f1-987d-342e94018523|/200e90f3-ec66-45f1-987d-342e94018523|",
-        ""
-      ],
-      [
-        "pin_not_driven|2146300|736600|5cbcfeb9-1066-41e0-862c-2be433dbcd76|00000000-0000-0000-0000-000000000000|/200e90f3-ec66-45f1-987d-342e94018523|/200e90f3-ec66-45f1-987d-342e94018523|",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -519,7 +510,7 @@
       "plot": "Gerber files/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "H bridge.step",
       "svg": "",
       "vrml": ""
     },
