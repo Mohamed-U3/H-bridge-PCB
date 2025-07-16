@@ -25649,8 +25649,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "EN   D   GND"
-		(at 183 108.75 0)
+	(gr_text "D   EN   GND"
+		(at 183.5 108.75 0)
 		(layer "F.SilkS")
 		(uuid "dec93e42-919d-4a64-99b0-856ddc39186b")
 		(effects
